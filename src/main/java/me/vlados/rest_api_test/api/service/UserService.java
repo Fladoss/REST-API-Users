@@ -1,4 +1,4 @@
-package me.vlados.rest_api_test.service;
+package me.vlados.rest_api_test.api.service;
 
 import me.vlados.rest_api_test.api.dao.UserDAO;
 

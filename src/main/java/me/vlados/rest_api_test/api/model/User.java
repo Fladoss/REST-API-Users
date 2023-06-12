@@ -11,7 +11,6 @@ import lombok.Data;
 public class User {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    @NotNull
     @Column(name = "id")
     private Integer id;
 
@@ -30,7 +29,10 @@ public class User {
     public User() {
     }
 
-    public User(Integer id, String name, Integer age, String email) {
+    public User(Integer id,
+                @NotBlank String name,
+                @NotNull Integer age,
+                @NotBlank String email) {
         this.id = id;
         this.name = name;
         this.age = age;

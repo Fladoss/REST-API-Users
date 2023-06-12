@@ -1,4 +1,4 @@
-package me.vlados.rest_api_test.service;
+package me.vlados.rest_api_test.api.service;
 
 import jakarta.transaction.Transactional;
 import me.vlados.rest_api_test.api.dao.UserDAOImpl;

@@ -4,7 +4,7 @@ import jakarta.validation.Valid;
 import me.vlados.rest_api_test.api.model.User;
 import me.vlados.rest_api_test.exceptions.NoSuchUserException;
 import me.vlados.rest_api_test.exceptions.NoUsersFoundException;
-import me.vlados.rest_api_test.service.UserService;
+import me.vlados.rest_api_test.api.service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 

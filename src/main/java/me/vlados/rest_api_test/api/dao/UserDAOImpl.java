@@ -28,6 +28,7 @@ public class UserDAOImpl implements UserDAO {
         }
     }
 
+    // returns the first entry (user) with the given name
     @Override
     public Optional<User> getUserByName(String name) {
         // we get a list of users by name, but actually only one will be returned
@@ -35,7 +36,7 @@ public class UserDAOImpl implements UserDAO {
                 .setParameter("name", name)
                 .getResultList();
 
-        // returns the optional
+        // returns the optional containing user or empty optional
         return dummyUser.stream().findFirst();
     }
 
