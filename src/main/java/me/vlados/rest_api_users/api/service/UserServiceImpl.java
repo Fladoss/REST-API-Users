@@ -1,8 +1,8 @@
-package me.vlados.rest_api_test.api.service;
+package me.vlados.rest_api_users.api.service;
 
 import jakarta.transaction.Transactional;
-import me.vlados.rest_api_test.api.dao.UserDAOImpl;
-import me.vlados.rest_api_test.api.model.User;
+import me.vlados.rest_api_users.api.dao.UserDAOImpl;
+import me.vlados.rest_api_users.api.entity.User;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 

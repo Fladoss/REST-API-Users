@@ -1,4 +1,4 @@
-package me.vlados.rest_api_test.exceptions;
+package me.vlados.rest_api_users.exceptions;
 
 import org.springframework.http.HttpStatus;
 import org.springframework.web.bind.annotation.ResponseStatus;

@@ -1,4 +1,4 @@
-package me.vlados.rest_api_test;
+package me.vlados.rest_api_users;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

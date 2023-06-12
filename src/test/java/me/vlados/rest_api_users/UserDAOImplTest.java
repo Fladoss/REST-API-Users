@@ -1,9 +1,9 @@
-package me.vlados.rest_api_test;
+package me.vlados.rest_api_users;
 
 import jakarta.persistence.EntityManager;
 import jakarta.persistence.Query;
-import me.vlados.rest_api_test.api.dao.UserDAOImpl;
-import me.vlados.rest_api_test.api.model.User;
+import me.vlados.rest_api_users.api.dao.UserDAOImpl;
+import me.vlados.rest_api_users.api.entity.User;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import org.mockito.InjectMocks;

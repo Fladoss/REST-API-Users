@@ -1,7 +1,7 @@
-package me.vlados.rest_api_test.api.dao;
+package me.vlados.rest_api_users.api.dao;
 
 import jakarta.persistence.EntityManager;
-import me.vlados.rest_api_test.api.model.User;
+import me.vlados.rest_api_users.api.entity.User;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Repository;
 import java.util.List;

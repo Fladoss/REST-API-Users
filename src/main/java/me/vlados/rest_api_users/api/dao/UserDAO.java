@@ -1,6 +1,6 @@
-package me.vlados.rest_api_test.api.dao;
+package me.vlados.rest_api_users.api.dao;
 
-import me.vlados.rest_api_test.api.model.User;
+import me.vlados.rest_api_users.api.entity.User;
 
 import java.util.List;
 import java.util.Optional;

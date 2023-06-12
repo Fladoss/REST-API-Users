@@ -1,4 +1,4 @@
-package me.vlados.rest_api_test;
+package me.vlados.rest_api_users;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;

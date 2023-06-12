@@ -1,10 +1,10 @@
-package me.vlados.rest_api_test.api.controller;
+package me.vlados.rest_api_users.api.controller;
 
 import jakarta.validation.Valid;
-import me.vlados.rest_api_test.api.model.User;
-import me.vlados.rest_api_test.exceptions.NoSuchUserException;
-import me.vlados.rest_api_test.exceptions.NoUsersFoundException;
-import me.vlados.rest_api_test.api.service.UserService;
+import me.vlados.rest_api_users.api.entity.User;
+import me.vlados.rest_api_users.exceptions.NoSuchUserException;
+import me.vlados.rest_api_users.exceptions.NoUsersFoundException;
+import me.vlados.rest_api_users.api.service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
@@ -60,7 +60,7 @@ public class UserController {
 
 
     @PostMapping("/user")
-    public User addUser(@Valid @RequestBody User user) {
+    public User saveUser(@Valid @RequestBody User user) {
         return userService.saveUser(user);
     }
 

@@ -9,7 +9,7 @@
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
     <groupId>me.vlados</groupId>
-    <artifactId>REST_API_Test</artifactId>
+    <artifactId>REST-API-Users</artifactId>
     <version>0.0.1-SNAPSHOT</version>
     <name>REST API Test</name>
     <description>REST API Test</description>

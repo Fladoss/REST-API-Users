@@ -1,4 +1,4 @@
-package me.vlados.rest_api_test.api.model;
+package me.vlados.rest_api_users.api.entity;
 
 import jakarta.persistence.*;
 import jakarta.validation.constraints.NotBlank;

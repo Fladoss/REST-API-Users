@@ -1,11 +1,11 @@
-package me.vlados.rest_api_test;
+package me.vlados.rest_api_users;
 
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.ObjectMapper;
-import me.vlados.rest_api_test.api.controller.UserController;
-import me.vlados.rest_api_test.api.model.User;
-import me.vlados.rest_api_test.api.service.UserServiceImpl;
+import me.vlados.rest_api_users.api.controller.UserController;
+import me.vlados.rest_api_users.api.entity.User;
+import me.vlados.rest_api_users.api.service.UserServiceImpl;
 import org.junit.jupiter.api.Test;
 import org.mockito.Mockito;
 import org.springframework.beans.factory.annotation.Autowired;
