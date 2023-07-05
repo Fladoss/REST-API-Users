@@ -61,12 +61,12 @@ public class UserController {
 
     @PostMapping("/user")
     public User saveUser(@Valid @RequestBody User user) {
-        return userService.saveUser(user);
+        return userService.saveOrUpdateUser(user);
     }
 
     @PutMapping("/user")
     public User updateUser(@Valid @RequestBody User user) {
-        return userService.saveUser(user);
+        return userService.saveOrUpdateUser(user);
     }
 
     // using regex to match only digits

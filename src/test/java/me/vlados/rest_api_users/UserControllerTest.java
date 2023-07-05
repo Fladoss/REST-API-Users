@@ -139,7 +139,7 @@ public class UserControllerTest {
         user.setAge(23);
         user.setEmail("abob@gmail.com");
 
-        Mockito.when(userService.saveUser(user)).thenReturn(user);
+        Mockito.when(userService.saveOrUpdateUser(user)).thenReturn(user);
 
         ObjectMapper objectMapper = new ObjectMapper();
         objectMapper.setSerializationInclusion(JsonInclude.Include.NON_NULL);
@@ -160,8 +160,8 @@ public class UserControllerTest {
             e.printStackTrace();
         }
 
-        Mockito.verify(userService).saveUser(user);
-        assertThat(userService.saveUser(user)).isEqualTo(user);
+        Mockito.verify(userService).saveOrUpdateUser(user);
+        assertThat(userService.saveOrUpdateUser(user)).isEqualTo(user);
     }
 
     @Test

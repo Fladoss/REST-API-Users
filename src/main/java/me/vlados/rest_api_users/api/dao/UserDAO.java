@@ -14,7 +14,7 @@ public interface UserDAO {
 
     List<User> getAllUsersByName(String name);
 
-    User saveUser(User user);
+    User saveOrUpdateUser(User user);
 
     Optional<User> deleteUserById(Integer id);
 

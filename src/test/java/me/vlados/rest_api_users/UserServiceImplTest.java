@@ -109,9 +109,9 @@ public class UserServiceImplTest {
         user.setName("Abobius");
         user.setId(1);
 
-        Mockito.when(userDAO.saveUser(user)).thenReturn(user);
+        Mockito.when(userDAO.saveOrUpdateUser(user)).thenReturn(user);
 
-        User savedUser = userService.saveUser(user);
+        User savedUser = userService.saveOrUpdateUser(user);
 
         assertThat(savedUser.getName()).isEqualTo("Abobius");
         assertThat(savedUser.getId()).isEqualTo(1);
@@ -124,9 +124,9 @@ public class UserServiceImplTest {
         user.setName("Abobius");
         user.setId(1);
 
-        Mockito.when(userDAO.saveUser(user)).thenReturn(user);
+        Mockito.when(userDAO.saveOrUpdateUser(user)).thenReturn(user);
 
-        User savedUser = userService.saveUser(user);
+        User savedUser = userService.saveOrUpdateUser(user);
 
         assertThat(savedUser.getName()).isEqualTo("Abobius");
         assertThat(savedUser.getId()).isEqualTo(1);

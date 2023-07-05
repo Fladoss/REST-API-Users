@@ -135,7 +135,7 @@ public class UserDAOImplTest {
         User user = new User();
         user.setName("Abobius");
 
-        userDAO.saveUser(user);
+        userDAO.saveOrUpdateUser(user);
 
         Mockito.verify(entityManager).merge(user);
     }
